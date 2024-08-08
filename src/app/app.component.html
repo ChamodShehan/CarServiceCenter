@@ -1,0 +1,13 @@
+<div class="flex">
+    <app-sidebar></app-sidebar>
+    <div class="flex-1 p-4">
+      <div>
+        <select (change)="switchLanguage($event)">
+          <option value="en">English</option>
+          <option value="es">Español</option>
+        </select>
+      </div>
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  
